@@ -50,7 +50,7 @@ const rest = new REST().setToken(process.env.LOGIN_TOKEN);
 // 	.then(() => console.log('Successfully deleted guild command'))
 // 	.catch(console.error);
 
-// // DELETE global commands. update commandID number in the back
-// rest.delete(Routes.applicationCommand(process.env.CLIENT_ID, '1116001254750040185'))
+// DELETE global commands. update commandID number in the back
+// rest.delete(Routes.applicationCommand(process.env.CLIENT_ID, '1116031610039570512'))
 // 	.then(() => console.log('Successfully deleted application command'))
 // 	.catch(console.error);
