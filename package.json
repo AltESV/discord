@@ -1,7 +1,6 @@
 {
   "name": "discord",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,13 +8,23 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "discord.js": "^14.11.0",
     "dotenv": "^16.1.4",
-    "openai": "^3.2.1"
+    "openai": "^3.2.1",
+    "node-fetch": "^3.1.0"
   },
   "devDependencies": {
     "eslint": "^8.42.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AltESV/discord.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AltESV/discord/issues"
+  },
+  "homepage": "https://github.com/AltESV/discord#readme",
+  "description": ""
 }
