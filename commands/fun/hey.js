@@ -14,7 +14,7 @@ const wait = require('node:timers/promises').setTimeout;
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('hey')
-		.setDescription('Reply from Hank!')
+		.setDescription('Reply from Hugh!')
 		.addStringOption(option => 
 			option.setName('input')
 				.setDescription('Your question')),
