@@ -8,6 +8,9 @@ const configuration = new Configuration({
 });
 const openai = new OpenAIApi(configuration);
 
+const wait = require('node:timers/promises').setTimeout;
+
+
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('hey')
@@ -16,6 +19,8 @@ module.exports = {
 			option.setName('input')
 				.setDescription('Your question')),
 	async execute(interaction) {
+		await interaction.deferReply();
+		await wait(9000);
 		const userPrompt = interaction.options.getString('input');
 		console.log(userPrompt)
 		const openaiResponse = await openai.createChatCompletion({
@@ -30,7 +35,8 @@ module.exports = {
 		console.log(openaiResponse)
 
 		const responseText = openaiResponse.data.choices[0].message.content;
+		console.log(responseText)
 		
-		await interaction.reply(responseText);
+		await interaction.editReply(responseText);
 	},
 };

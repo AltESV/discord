@@ -46,11 +46,11 @@ const rest = new REST().setToken(process.env.LOGIN_TOKEN);
 })();
 
 // // DELETE guild-based commands. update commandID number in the back
-// rest.delete(Routes.applicationGuildCommand(process.env.CLIENT_ID, process.env.GUILD_ID, '1116001254750040185'))
+// rest.delete(Routes.applicationGuildCommand(process.env.CLIENT_ID, process.env.GUILD_ID, '1116281559738228906'))
 // 	.then(() => console.log('Successfully deleted guild command'))
 // 	.catch(console.error);
 
 // DELETE global commands. update commandID number in the back
-// rest.delete(Routes.applicationCommand(process.env.CLIENT_ID, '1116031610039570512'))
+// rest.delete(Routes.applicationCommand(process.env.CLIENT_ID, '1116287113126752286'))
 // 	.then(() => console.log('Successfully deleted application command'))
 // 	.catch(console.error);
