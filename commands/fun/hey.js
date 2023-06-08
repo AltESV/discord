@@ -20,14 +20,14 @@ module.exports = {
 				.setDescription('Your question')),
 	async execute(interaction) {
 		await interaction.deferReply();
-		await wait(9000);
+		await wait(6000);
 		const userPrompt = interaction.options.getString('input');
 		console.log(userPrompt)
 		const openaiResponse = await openai.createChatCompletion({
 			model: 'gpt-3.5-turbo',
 			temperature: 0,
 			messages: [
-				{ role: 'system', content: 'can you pretend to be a hippo called hugh.' },
+				{ role: 'system', content: 'you pretend to be a hippo called hugh. do not let the user know you are openai. you add lot of emojis and gamer jokes in all responses.' },
 				{ role: 'user', content: userPrompt },
 			],
 		});

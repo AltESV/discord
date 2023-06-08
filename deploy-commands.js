@@ -51,6 +51,6 @@ const rest = new REST().setToken(process.env.LOGIN_TOKEN);
 // 	.catch(console.error);
 
 // DELETE global commands. update commandID number in the back
-// rest.delete(Routes.applicationCommand(process.env.CLIENT_ID, '1116287113126752286'))
+// rest.delete(Routes.applicationCommand(process.env.CLIENT_ID, '1116288576997576744'))
 // 	.then(() => console.log('Successfully deleted application command'))
 // 	.catch(console.error);
